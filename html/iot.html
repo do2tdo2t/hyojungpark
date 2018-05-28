@@ -33,160 +33,111 @@
 		<div class="inner">
 			<h2>IoT Project</h2>
 
-			<section>	
-			<div class = inner>
-			<div class="spotlight">
-				<div class="content">
-					<h3>Eye for you</h3>
-					<p>
-						요약 내용
-					</p>
-				</div>
-			</div>
-			<!-- Container for the image gallery -->
-			<div class="container">
-				<!-- Full-width images with number text -->
-				<div class="mySlides">
-					<div class="numbertext">1 / 6</div>
-					<img src="img_woods_wide.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext">2 / 6</div>
-					<img src="img_fjords_wide.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext">3 / 6</div>
-					<img src="img_mountains_wide.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext">4 / 6</div>
-					<img src="img_lights_wide.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext">5 / 6</div>
-					<img src="img_nature_wide.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext">6 / 6</div>
-					<img src="img_snow_wide.jpg" style="width:100%">
-				</div>
-
-				<!-- Next and previous buttons -->
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-				<!-- Image text -->
-				<div class="caption-container">
-					<p id="caption"></p>
-				</div>
-
-				<!-- Thumbnail images -->
-				<div class="row">
-					<div class="column">
-						<img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+			<section>
+				<div class=i nner>
+					<div class="spotlight">
+						<div class="content">
+							<h3>Eye for you</h3>
+							<p>
+								요약 내용
+							</p>
+						</div>
 					</div>
-					<div class="column">
-						<img class="demo cursor" src="img_fjords.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
-					</div>
-					<div class="column">
-						<img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-					</div>
-					<div class="column">
-						<img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-					</div>
-					<div class="column">
-						<img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-					</div>
-					<div class="column">
-						<img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+
+					<!-- Container for the image gallery 01 -->
+					<div class="container" id="container1">
+						<!-- Full-width images with number text -->
+						<script language="JavaScript">
+							for (i = 1; i <= 25; i++) {
+								document.write("<div class='mySlides' style='display:none'  name = " + i + ">");
+								document.write("<div class='numbertext'>" + i + "/ 25</div>");
+								document.write("<img src='./images/eye4u/" + i + ".JPG' style='width:100%'  width=600px>");
+								document.write("</div>");
+							}
+						</script>
+
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+
+						<!-- Image text 
+						<div class="caption-container" width="600px">
+							<p id="caption"></p>
+						</div>
+						-->
+						<!-- Thumbnail images -->
+						<div class="row">
+							<script language="JavaScript">
+								for (i = 1; i <= 25; i++) {
+									document.write("<div class='column'>");
+									document.write("<img class='demo cursor' style='width:100%' src='./images/eye4u/" + i + ".JPG' onclick='currentSlide(" + i + ",1)' alt='" + i + "'/>");
+									document.write("</div>");
+								}
+							</script>
+							<!--
+							<div class="column">
+								<img class="demo cursor" src="./images/eye4u/1.JPG" style="width:100%" onclick="currentSlide(1)" alt="1">
+							</div>
+							-->
+						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+
+			<section>
+				<div class=i nner>
+					<div class="spotlight">
+						<div class="content">
+							<h3>GSharp</h3>
+							<p>
+								요약 내용
+							</p>
+						</div>
+					</div>
+
+					<!-- Container for the image gallery 01 -->
+					<div class="container" id="container2">
+						<!-- 
+						<div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img src="img_woods_wide.jpg" style="width:100%">-->
+					</div>
+
+					<!-- Full-width images with number text -->
+					<script language="JavaScript">
+						for (i = 1; i <= 25; i++) {
+							document.write("<div class='mySlides' style='display:none'  name = " + i + ">");
+							document.write("<div class='numbertext'>" + i + "/ 25</div>");
+							document.write("<img src='./images/eye4u/" + i + ".JPG' style='width:100%'  width=600px>");
+							document.write("</div>");
+						}
+					</script>
+
+					<!-- Next and previous buttons2 -->
+					<!--
+						<a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+						-->
+
+					<!-- Image text -->
+					<!--
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+						-->
+
+					<!-- Thumbnail images -->
+					<script language="JavaScript">
+						for (i = 1; i <= 25; i++) {
+							document.write("<div class='column'>");
+							document.write("<img class='demo cursor' style='width:100%' src='./images/eye4u/" + i + ".JPG' onclick='currentSlide(" + i + ",2)' alt='" + i + "'/>");
+							document.write("</div>");
+						}
+					</script>
+				</div>
 		</div>
-	</section>
-	
-			<section>	
-			<div class = inner>
-			<div class="spotlight">
-				<div class="content">
-					<h3>GSharp</h3>
-					<p>
-						요약 내용
-					</p>
-				</div>
-			</div>
-			<!-- Container for the image gallery -->
-			<div class="container">
-				<!-- Full-width images with number text -->
-				<div class="mySlides">
-					<div class="numbertext">1 / 6</div>
-					<img src="img_woods_wide.jpg" style="width:100%">
-				</div>
+		</section>
 
-				<div class="mySlides">
-					<div class="numbertext">2 / 6</div>
-					<img src="img_fjords_wide.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext">3 / 6</div>
-					<img src="img_mountains_wide.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext">4 / 6</div>
-					<img src="img_lights_wide.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext">5 / 6</div>
-					<img src="img_nature_wide.jpg" style="width:100%">
-				</div>
-
-				<div class="mySlides">
-					<div class="numbertext">6 / 6</div>
-					<img src="img_snow_wide.jpg" style="width:100%">
-				</div>
-
-				<!-- Next and previous buttons -->
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-				<!-- Image text -->
-				<div class="caption-container">
-					<p id="caption"></p>
-				</div>
-
-				<!-- Thumbnail images -->
-				<div class="row">
-					<div class="column">
-						<img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-					</div>
-					<div class="column">
-						<img class="demo cursor" src="img_fjords.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
-					</div>
-					<div class="column">
-						<img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-					</div>
-					<div class="column">
-						<img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-					</div>
-					<div class="column">
-						<img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-					</div>
-					<div class="column">
-						<img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
 </body>
 
 <!-- Footer -->
@@ -203,10 +154,8 @@
 <script src="../assets/js/skel.min.js"></script>
 <script src="../assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-[if lte IE 8]
-<script src="./js/sub.js"></script>[endif]
-<script src="../assets/js/main.js"></script>
 
-</body>
+<script src="./js/sub.js"></script>
+<script src="../assets/js/main.js"></script>
 
 </html>
