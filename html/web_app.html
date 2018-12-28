@@ -23,7 +23,7 @@
 		<div class="inner split">
 			<section>
 				<a href="../index.html">
-					<img src="./images/home.png"width="70px"  height="70px" />
+					<img src="./images/home.png" width="70px" height="70px" />
 					<h3> HOME</h3>
 				</a>
 			</section>
@@ -35,120 +35,182 @@
 		<div class="inner">
 			<h2>WEB/APP Project</h2>
 
-			<section>	
-			<div class = inner>
-			<div class="spotlight">
-				<div class="content">
-					<h3>Eye for you</h3>
-					<p>git : <a href="https://github.com/do2tdo2t/Eye4You_Project">https://github.com/do2tdo2t/Eye4You_Project</a></p>
-							
-							
-					<img src="./images/eye4u/intro.JPG" width="1000px"/>
-			
-				</div>
-			</div>
+			<section>
+				<div class=inner>
+					<div class="spotlight">
+						<div class="content">
+							<h3>Eye for you</h3>
+							<p>git : <a href="https://github.com/do2tdo2t/Eye4You_Project">https://github.com/do2tdo2t/Eye4You_Project</a></p>
 
-			<!-- Container for the image gallery 01 -->
-			<div class="container" id = "container1" >
-				<!-- Full-width images with number text -->
-				<script language = "JavaScript">
-					for(i = 1 ; i<=26  ; i++){
-						document.write("<div class='mySlides' style='display:none'  name = "+ i +">");
-						document.write("<div class='numbertext'>"+i+"/ 26</div>");
-						document.write("<img src='./images/eye4u/"+ i +".JPG' style='width:100%'  width=600px>");
-						document.write("</div>");
-					}
-				</script>
 
-				<!-- Next and previous buttons -->
-				<a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1,1)">&#10095;</a>
-		
-				<!-- Image text 
+							<img src="./images/eye4u/intro.JPG" width="1000px" />
+
+						</div>
+					</div>
+
+					<!-- Container for the image gallery 01 -->
+					<div class="container" id="container1">
+						<!-- Full-width images with number text -->
+						<script language="JavaScript">
+							for (i = 1; i <= 26; i++) {
+								if (i > 26) i = 1;
+								document.write("<div class='mySlides' style='display:none'  name = " + i + ">");
+								document.write("<div class='numbertext'>" + i + "/ 26</div>");
+								document.write("<img src='./images/eye4u/" + i + ".JPG' style='width:100%'  width=600px>");
+								document.write("</div>");
+
+
+							}
+						</script>
+
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+
+						<!-- Image text 
 				<div class="caption-container" width="600px">
 					<p id="caption"></p>
 				</div>
 				-->
-				<!-- Thumbnail images -->
-				<div class="row">
-					<script language = "JavaScript">
-							for(i = 1 ; i<=26  ; i++){
-								document.write("<div class='column'>");
-								document.write("<img class='demo cursor' style='width:100%' src='./images/eye4u/"+i+".JPG' onclick='currentSlide("+i+",1)' alt='"+i+"'/>");
-								document.write("</div>");
-							}
-					</script>
-					<!--
+						<!-- Thumbnail images -->
+						<div class="row">
+							<script language="JavaScript">
+								for (i = 1; i <= 26; i++) {
+									if (i > 26) i = 1;
+									document.write("<div class='column'>");
+									document.write("<img class='demo cursor' style='width:100%' src='./images/eye4u/" + i + ".JPG' onclick='currentSlide(" + i + ",1)' alt='" + i + "'/>");
+									document.write("</div>");
+								}
+							</script>
+							<!--
 					<div class="column">
 						<img class="demo cursor" src="./images/eye4u/1.JPG" style="width:100%" onclick="currentSlide(1)" alt="1">
 					</div>
 					-->
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	
-			<section>	
-			<div class = inner>
-			<div class="spotlight">
-				<div class="content">
-					<h3>GSharp</h3>
-					
-				</div>
-			</div>
+			</section>
 
-						<!-- Container for the image gallery 01 -->
-			<div class="container" id = "container2" >
-				<!-- 
+			<section>
+				<div class=inner style="margin-top:40px">
+					<div class="spotlight">
+						<div class="content">
+							<h3>Check In</h3>
+							<p>개발 환경 : Spring, JQuery, JSP/Serverlet, Bootstrap,CSS3,HTML5,AJax, Oracle</p>
+							<p>기간 : 18년 7월 30일 ~ 17년 8월 31일 (7주)</p>
+							<p>git : <a href="https://github.com/checkin01/CheckIn">https://github.com/checkin01/CheckIn</a></p>
+
+							<!--<img src="./images/checkIn/intro.JPG" width="1000px" />
+							-->
+						</div>
+					</div>
+
+					<!-- Container for the image gallery 01 -->
+					<div class="container" id="container2">
+						<!-- Full-width images with number text -->
+						<script language="JavaScript">
+							for (i = 1; i <= 36; i++) {
+								if (i > 36) i = 1;
+								document.write("<div class='mySlides' style='display:none'  name = " + i + ">");
+								document.write("<div class='numbertext'>" + i + "/ 36</div>");
+								document.write("<img src='./images/checkIn/" + i + ".jpg' style='width:100%'  width=600px>");
+								document.write("</div>");
+							}
+						</script>
+
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+
+						<!-- Image text 
+				<div class="caption-container" width="600px">
+					<p id="caption"></p>
+				</div>
+				-->
+						<!-- Thumbnail images -->
+						<div class="row">
+							<script language="JavaScript">
+								for (i = 1; i <= 36; i++) {
+									if (i > 36) i = 1;
+									document.write("<div class='column'>");
+									document.write("<img class='demo cursor' style='width:100%' src='./images/checkIn/" + i + ".jpg' onclick='currentSlide(" + i + ",1)' alt='" + i + "'/>");
+									document.write("</div>");
+								}
+							</script>
+							<!--
+					<div class="column">
+						<img class="demo cursor" src="./images/eye4u/1.JPG" style="width:100%" onclick="currentSlide(1)" alt="1">
+					</div>
+					-->
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class=inner>
+					<div class="spotlight">
+						<div class="content">
+							<h3>GSharp</h3>
+
+						</div>
+					</div>
+
+					<!-- Container for the image gallery 01 -->
+					<div class="container" id="container3">
+						<!-- 
 				<div class="mySlides">
 					<div class="numbertext">1 / 6</div>
 					<img src="img_woods_wide.jpg" style="width:100%">-->
-				</div>
+					</div>
 
-				<!-- Full-width images with number text -->
-				<script language = "JavaScript">
-						for(i = 1 ; i<=25  ; i++){
-							document.write("<div class='mySlides' style='display:none'  name = "+ i +">");
-							document.write("<div class='numbertext'>"+i+"/ 25</div>");
-							document.write("<img src='./images/eye4u/"+ i +".JPG' style='width:100%'  width=600px>");
+					<!-- Full-width images with number text -->
+					<script language="JavaScript">
+						for (i = 1; i <= 25; i++) {
+							if (i > 25) i = 1;
+							document.write("<div class='mySlides' style='display:none'  name = " + i + ">");
+							document.write("<div class='numbertext'>" + i + "/ 25</div>");
+							document.write("<img src='./images/eye4u/" + i + ".JPG' style='width:100%'  width=600px>");
 							document.write("</div>");
 						}
 					</script>
 
-				<!-- Next and previous buttons2 -->
-				<!--
+					<!-- Next and previous buttons2 -->
+					<!--
 				<a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1,2)">&#10095;</a>
 				-->
 
-				<!-- Image text -->
-				<!--
+					<!-- Image text -->
+					<!--
 				<div class="caption-container">
 					<p id="caption"></p>
 				</div>
 				-->
 
-				<!-- Thumbnail images -->
-				<script language = "JavaScript">
-						for(i = 1 ; i<=25  ; i++){
+					<!-- Thumbnail images -->
+					<script language="JavaScript">
+						for (i = 1; i <= 25; i++) {
+							if (i > 25) i = 1;
 							document.write("<div class='column'>");
-							document.write("<img class='demo cursor' style='width:100%' src='./images/eye4u/"+i+".JPG' onclick='currentSlide("+i+",2)' alt='"+i+"'/>");
+							document.write("<img class='demo cursor' style='width:100%' src='./images/eye4u/" + i + ".JPG' onclick='currentSlide(" + i + ",2)' alt='" + i + "'/>");
 							document.write("</div>");
 						}
-				</script>
-			</div>
+					</script>
+				</div>
 		</div>
 	</section>
 	<span>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 </body>
 
 <!-- Footer -->
